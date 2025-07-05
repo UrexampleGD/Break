@@ -20,13 +20,13 @@ if game.PlaceId ~= 13864667823 then
 		Tab:AddButton({
 			Name = "Free Hacker Role",
 			Callback = function()
-				game:GetService("ReplicatedStorage").BindableEvents.GetRoles:FireServer("Phone", true, false)
+				game:GetService("ReplicatedStorage").RemoteEvents.OutsideRole:FireServer("Phone", true, false)
 			end
 		})
 		Tab:AddButton({
 			Name = "Free Nerd Kid Role",
 			Callback = function()
-				game:GetService("ReplicatedStorage").BindableEvents.GetRoles:FireServer("Book", true, false)
+				game:GetService("ReplicatedStorage").RemoteEvents.OutsideRole:FireServer("Book", true, false)
 			end
 		})
 		OrionLib:Init()
